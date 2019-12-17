@@ -56,10 +56,10 @@ class ScratchView extends Component {
             return (
                 <TouchableWithoutFeedback
                     onPressIn={this.onScratchCardWebPressed}
-                    style={styles.container}
+                    style={[styles.container, {backgroundColor: this.props.placeholderColor}]}
                 >
                     <Animated.Image
-                        source={{ uri: props.coverImage }}
+                        source={{ uri: this.props.imageUrl }}
                         style={[styles.image, {opacity: this.imageOpacity}]}
                     />
                 </TouchableWithoutFeedback>
