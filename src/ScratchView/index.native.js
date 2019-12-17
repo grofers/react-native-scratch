@@ -5,7 +5,16 @@ const RNTScratchView = requireNativeComponent('RNTScratchView', ScratchView);
 
 const AnimatedScratchView = RNTScratchView && Animated.createAnimatedComponent(RNTScratchView);
 
+const styles = StyleSheet.create({
+    container: {
+        position: 'absolute',
+        width: '100%',
+        height: '100%'
+    },
+});
+
 class ScratchView extends Component {
+
     constructor(props) {
         super(props);
 
@@ -92,14 +101,5 @@ class ScratchView extends Component {
         return null;
     }
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-        position: 'absolute',
-        width: '100%',
-        height: '100%'
-    },
-});
 
 export default ScratchView
