@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Animated, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Animated, TouchableWithoutFeedback, Easing } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
