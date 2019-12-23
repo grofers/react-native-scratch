@@ -20,6 +20,10 @@ class ScratchView extends Component {
 
     imageOpacity = new Animated.Value(1)
 
+    static defaultProps = {
+        placeholderColor: 'white',
+    }
+
     constructor(props) {
         super(props);
 
@@ -56,11 +60,11 @@ class ScratchView extends Component {
             return (
                 <TouchableWithoutFeedback
                     onPressIn={this.onScratchCardWebPressed}
-                    style={[styles.container, {backgroundColor: this.props.placeholderColor}]}
+                    style={styles.container}
                 >
                     <Animated.Image
                         source={{ uri: this.props.imageUrl }}
-                        style={[styles.image, {opacity: this.imageOpacity}]}
+                        style={[styles.image, {opacity: this.imageOpacity, backgroundColor: this.props.placeholderColor}]}
                     />
                 </TouchableWithoutFeedback>
             );
