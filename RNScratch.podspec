@@ -11,8 +11,9 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/grofers/react-native-scratch"
   s.license      = "MIT"
+  s.authors      = "grofers"
   s.platforms    = { :ios => "9.0", :tvos => "9.0" }
-  s.source       = { :git => "https://github.com/grofers/react-native-scratch", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/grofers/react-native-scratch.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
